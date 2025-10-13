@@ -1,0 +1,1 @@
+cout << "Halo " << nama << endl;

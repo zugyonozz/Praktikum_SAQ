@@ -1,0 +1,111 @@
+# Tipe Data
+
+## Numerik
+### Unsigned
+keyword Unsigned berfungsi untuk memberi tahu ke compiler bahwa tipe tersebut adalah angka yang tidak punya nilai negatif, hanya 0 dan positif.
+tipe data unsigned ini ada bermacam-macam dibedakan berdasarkan ukuran data dan kapasitas angka yang dapat ditampung.
+- unsigned char
+  - ukuran data			: 1 byte
+  - Min angka			: 0
+  - Max angka			: 255
+  - representasi bit	: 2^8 - 1 = 0000 0000
+- unsigned short
+  - ukuran data			: 2 byte
+  - Min angka			: 0
+  - Max angka			: 16655
+  - representasi bit	: 2^16 - 1 = 0000 0000 0000 0000
+- unsigned alias unsigned int
+  - ukuran data			: 4 byte
+  - Min angka			: 0
+  - Max angka			: 4,294,967,295
+  - representasi bit	: 2^32 - 1 = 0000 0000 0000 0000 0000 0000 0000 0000
+- unsigned long (berbeda - beda, tergantung arsitektur)
+  - (arsitektur 32-bit)
+  	- ukuran data		: 4 byte 
+  	- Min angka			: 0
+  	- Max angka			: 4,294,967,295
+  	- representasi bit	: 2^32 - 1 = 0000 0000 0000 0000 0000 0000 0000 0000
+  - (arsitektur 64-bit)
+    - ukuran data		: `8 byte`
+    - Min angka			: `0`
+    	- rumus			: `0`
+    	- biner			: `0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000`
+    	- hex			: `00000000`
+    - Max angka 		: `32,767`
+    	- rumus			: `2^15 - 1`
+    	- biner			: `1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111`
+  	- hex				: `FFFFFFFF`
+- unsigned long long
+  - ukuran data			: `8 byte`
+  - Min angka			: `0`
+  	- rumus				: `0`
+  	- biner				: `0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000`
+  	- hex				: `00000000`
+  - Max angka			: `32,767`
+  	- rumus				: `2^15 - 1`
+  	- biner				: `1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111`
+  	- hex				: `FFFFFFFF`
+### Signed
+keyword *signed* berfungsi untuk memberi tahu ke compiler bahwa tipe tersebut adalah angka yang punya **nilai positif dan negatif**.
+tipe data *signed* ini ada bermacam-macam dibedakan berdasarkan ukuran data dan kapasitas angka yang dapat ditampung.
+- signed char
+  - ukuran data			: `1 byte`
+  - Min angka			: `-128`
+  	- rumus				: `-2^7`
+  	- biner				: `1000 0000`
+  	- hex				: `00`
+  - Max angka			: `127`
+  	- rumus				: `2^7 - 1`
+  	- biner				: `0111 1111`
+  	- hex				: `FF`
+- signed short
+  - ukuran data			: `2 byte`
+  - Min angka			: `-32,768`
+  	- rumus				: `-2^15`
+  	- biner				: `1000 0000 0000 0000`
+  	- hex				: `0000`
+  - Max angka			: `32,767`
+  	- rumus				: `2^15 - 1`
+  	- biner				: `0111 1111 1111 1111`
+  	- hex				: `FFFF`
+- signed alias signed int
+  - ukuran data			: `4 byte`
+  	- Min angka			: `-2,147,483,648`
+    	- rumus			: `-2^31`
+    	- biner			: `1000 0000 0000 0000 0000 0000 0000 0000`
+    	- hex			: `000000`
+  	- Max angka			: `2,147,483,647`
+    	- rumus			: `2^31 - 1`
+    	- biner			: `0111 1111 1111 1111 1111 1111 1111 1111`
+    	- hex			: `FFFFFF`
+- signed long (berbeda - beda, tergantung arsitektur)
+  - (arsitektur 32-bit)
+  	- ukuran data		: `4 byte `
+  	- Min angka			: `-2,147,483,648`
+    	- rumus			: `-2^31`
+    	- biner			: `1000 0000 0000 0000 0000 0000 0000 0000`
+    	- hex			: `000000`
+  	- Max angka			: `2,147,483,647`
+    	- rumus			: `2^31 - 1`
+    	- biner			: `0111 1111 1111 1111 1111 1111 1111 1111`
+    	- hex			: `FFFFFF`
+  - (arsitektur 64-bit)
+  	- ukuran data		: `8 byte `
+  	- Min angka			: `-9,223,372,036,854,775,808`
+    	- rumus			: `-2^63`
+    	- biner			: `1000 0000 0000 0000 0000 0000 0000 0000 `0000 0000 0000 0000 0000 0000 0000 0000
+    	- hex			: `00000000`
+  	- Max angka			: `9,223,372,036,854,775,807`
+    	- rumus			: `2^63 - 1`
+    	- biner			: `0111 1111 1111 1111 1111 1111 1111 1111 `1111 1111 1111 1111 1111 1111 1111 1111
+    	- hex			: `FFFFFFFF`
+- signed long long
+  - ukuran data			: `8 byte `
+  - Min angka			: `-9,223,372,036,854,775,808`
+    	- rumus			: `-2^63`
+    	- biner			: `1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000`
+    	- hex			: `00000000`
+  	- Max angka			: `9,223,372,036,854,775,807`
+    	- rumus			: `2^63 - 1`
+    	- biner			: `0111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111`
+    	- hex			: `FFFFFFF`
